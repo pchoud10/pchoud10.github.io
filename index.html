@@ -3,90 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CricFix</title>
+    <meta name="description" content="CricFix is a cricket bat repair service offering professional repairs, DIY guides, and quality materials for players who want to extend the life of their cricket bats.">
+    <meta name="keywords" content="cricket bat repair, cricket bat fix, willow repair, bat handle replacement, cricket equipment, bat maintenance, DIY cricket repair">
+    <meta name="author" content="CricFix">
+    <title>CricFix - Cricket Bat Repair & Restoration</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Accessibility: skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
     <header id="main-header">
         <h1><a href="index.html">CricFix</a></h1>
         <p>You Play Hard. We Fix Harder.</p>
-        <button class="btn">Request Repair</button>
     </header>
 
     <!-- Navigation -->
-    <nav id="main-nav">
+    <nav id="main-nav" aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="howtos.html">How To's</a></li>
             <li><a href="materials.html">Materials</a></li>
-            <li><a href="#">Buy Now</a></li>
-            <li><a href="#">Repair Requests</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="content-box">
-        <h2>Featured Bat Repairs</h2>
-        <img src="images/hero-bat.jpg" alt="Featured cricket bat repair" class="hero-img">
-        <button class="btn">View Guides</button>
-        <button class="btn">Request Repair</button>
-    </section>
+    <main id="main-content">
 
-    <!-- Featured Guides -->
-    <section class="content-box">
-        <h2>Featured Guides</h2>
+        <!-- Hero Section -->
+        <section class="content-box">
+            <h2>Welcome to CricFix</h2>
+            <img src="images/hero-bat.jpg" alt="A cricket bat being restored on a workbench, showing before and after repair" class="hero-img">
+            <p>At CricFix, we believe every cricket bat deserves a second innings. Whether your bat has a hairline crack from a tough session, a worn toe from heavy practice, or a handle that has lost its grip, we have the tools, knowledge, and passion to bring it back to life. Our service combines traditional craftsmanship with modern repair techniques so your favorite bat can keep performing match after match.</p>
+            <a href="contact.html" class="btn">Request a Repair</a>
+            <a href="howtos.html" class="btn">View Guides</a>
+        </section>
 
-        <article>
-            <h3>How to Fix a Crack</h3>
-            <img src="images/crack-repair.jpg" alt="Cracked cricket bat being repaired" class="article-img">
-            <button class="btn">Read More</button>
-        </article>
+        <!-- Video Section -->
+        <section class="content-box">
+            <h2>How a Bat Repair Works</h2>
+            <p>Watch a quick walkthrough of a typical cricket bat crack repair from start to finish. The video shows our cleaning, gluing, clamping, and finishing process.</p>
+            <video controls aria-label="Video walkthrough of cricket bat crack repair process">
+                <source src="videos/bat-repair-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag. Please update your browser to view this content.
+            </video>
+        </section>
 
-        <article>
-            <h3>Toe Repair Guide</h3>
-            <img src="images/toe-repair.jpg" alt="Cricket bat toe repair" class="article-img">
-            <button class="btn">Read More</button>
-        </article>
+        <!-- Featured Guides -->
+        <section class="content-box">
+            <h2>Featured Repair Guides</h2>
+            <p>Want to try a repair yourself? These three popular guides cover the most common issues cricketers face with their bats.</p>
 
-        <article>
-            <h3>Handle Replacement</h3>
-            <img src="images/handle-replacement.jpg" alt="Cricket bat handle replacement" class="article-img">
-            <button class="btn">Read More</button>
-        </article>
-    </section>
+            <article>
+                <h3>How to Fix a Crack</h3>
+                <img src="images/crack-repair.jpg" alt="A cracked cricket bat with glue and clamps applied during repair" class="article-img">
+                <p>Hairline and surface cracks are common after a heavy season. With wood glue, clamps, and patience, most cracks can be sealed permanently and the bat returned to play.</p>
+                <a href="howtos.html" class="btn">Read More</a>
+            </article>
 
-    <!-- About Me -->
-    <section class="content-box">
-        <h2>About Me</h2>
-        <img src="images/about-me.jpg" alt="About CricFix" class="article-img">
-        <p>CricFix was established with the ideology that your equipment, almost always deserves a new lease on life.</p>
-        <button class="btn">Learn More</button>
-    </section>
+            <article>
+                <h3>Toe Repair Guide</h3>
+                <img src="images/toe-repair.jpg" alt="The toe of a cricket bat being trimmed and reshaped on a workbench" class="article-img">
+                <p>The toe takes the most damage from yorkers and ground impact. Trimming, reshaping, and adding a toe guard will dramatically extend the life of your bat.</p>
+                <a href="howtos.html" class="btn">Read More</a>
+            </article>
 
-    <!-- Quick Links -->
-    <section class="content-box">
-        <h2>Quick Links</h2>
-        <ul id="quick-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="howtos.html">How To's</a></li>
-            <li><a href="materials.html">Materials</a></li>
-            <li><a href="#">Contact Me</a></li>
-        </ul>
-    </section>
+            <article>
+                <h3>Handle Replacement</h3>
+                <img src="images/handle-replacement.jpg" alt="A cricket bat handle being removed and replaced with a new cane handle" class="article-img">
+                <p>A loose, splintered, or broken handle can be replaced with a new cane handle. This is one of the more advanced repairs, but it can save a bat you thought was finished.</p>
+                <a href="howtos.html" class="btn">Read More</a>
+            </article>
+        </section>
 
-    <!-- Call to Action -->
-    <section class="content-box">
-        <h2>Need your bat repaired? Submit a request!</h2>
-        <button class="btn">Request Repair</button>
-    </section>
+        <!-- About Me -->
+        <section class="content-box">
+            <h2>About CricFix</h2>
+            <p>CricFix was established with the simple ideology that your equipment, almost always, deserves a new lease on life. Founded by lifelong cricket fans, we have spent years learning the craft of bat repair from professional bat makers and applying those techniques to club-level cricketers like you. Whether you are a weekend warrior or a college-level batter, we are here to help your willow last longer.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="content-box">
+            <h2>Quick Links</h2>
+            <ul id="quick-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howtos.html">How To's</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer id="main-footer">
-        <h3>LOGO</h3>
-        <p>Insta: CricFixOC</p>
+        <h3>CricFix</h3>
+        <p>Follow us on Instagram: <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@CricFixOC</a></p>
+        <p>Email us: <a href="mailto:contact@cricfix.com">contact@cricfix.com</a></p>
         <p>Copyright &copy; 2026 CricFix. All rights reserved.</p>
     </footer>
 
